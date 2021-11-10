@@ -1,0 +1,24 @@
+/**
+ Plugin Name: Custom Search for Properties
+ Description: Custom Search for Properties - Premium plugin
+ Author: Artem Hordiichuk
+ Version: 1.0
+ */
+
+jQuery(document).ready(function(){
+
+    jQuery('#check_in').datepicker({
+        dateFormat : 'yy-mm-dd',
+        minDate: 0,
+        onSelect: function(dateText, inst){
+            jQuery("#check_out").datepicker("option","minDate", jQuery("#check_in").datepicker("getDate"));
+        }
+    });
+
+    jQuery('#check_out').datepicker({
+        dateFormat : 'yy-mm-dd'
+    });
+
+    jQuery("#check_out").datepicker("option","minDate", jQuery("#check_in").datepicker("getDate"));
+
+});

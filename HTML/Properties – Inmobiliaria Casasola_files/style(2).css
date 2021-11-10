@@ -1,0 +1,56 @@
+@charset 'utf-8';
+/*
+  Theme Name: Inmobiliara Casasola
+Description: Template Inmobiliara Casasola
+Author: Rodrigo Campos :: UP Agency
+Author URI: https://up.gt/
+  Template: casamia
+  Version: 1.0
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+/*
+font-family: 'Dancing Script', cursive;
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+h1,h2,h3 {
+  font-family: 'Dancing Script', cursive;
+}
+.top_panel {
+  margin-bottom: 6rem;
+}
+
+h5.properties_page_section_title {
+  border-top: none;
+}
+
+.sc_properties_block_info span.properties_page_section_item span.sc_properties_item_option_label_icon, .sc_properties_block_info span.properties_page_section_item span.sc_properties_item_option_label_icon i {
+  color: #f8bd6a;
+}
+
+.page_content_wrap .sc_properties .sc_properties_item .sc_properties_item_info .sc_properties_item_options_new span.prop-icons {
+  width: auto;
+  margin-right: 1.2em;
+}
+
+.page_content_wrap .sc_properties .sc_properties_item .sc_properties_item_info .sc_properties_item_options_new span.prop-icons span.sc_properties_item_option_label_icon {
+  color: #767676;
+}
+
+
+
+/*===--- FOOTER   ---===*/
+
+div#logo-footerarea .sc_layouts_item {
+  text-align: center;
+}
+
+@media (min-width: 739px) {
+  div#logo-footerarea .sc_layouts_item img.logo_image {
+      max-height: 200px;
+  }
+}

@@ -1,0 +1,13 @@
+(function( $ ) {
+	$(function() {
+		$( ".prop-place" ).autocomplete({
+			source: PropAutocomplete.prop_autocomplete,
+			delay: 100,
+			minLength: 0
+		}).focus(function(){
+			$(this).autocomplete("search");
+		});
+		
+	});
+
+})( jQuery );
