@@ -1,0 +1,74 @@
+.filter {
+	width: 90%;
+	margin: 1.5rem auto;
+	padding: 1rem 0;
+	background: white;
+}
+
+.form-filter {
+	width: 100%;
+	display: flex;
+	gap: 0.5rem;
+	flex-direction: column;
+}
+
+.form-filter input {
+	width: 95%;
+	font-size: 1rem !important;
+	margin: 0 auto;
+}
+
+@media (min-width: 648px) {
+	.filter {
+		transform: translateY(-3rem);
+		padding: 1rem;
+	}
+	.form-filter {
+		width: 95%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		background: white;
+	}
+
+	#departamento {
+		order: 7;
+	}
+	#ciudad {
+		order: 6;
+	}
+	#zona {
+		order: 5;
+	}
+	.search-form {
+		order: 4;
+	}
+}
+
+@media (min-width: 1119px) {
+	.filter {
+		transform: translateY(-3rem);
+		padding: 1rem;
+		width: 60%;
+	}
+	.form-filter {
+		width: 95%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		background: white;
+	}
+
+	#departamento {
+		order: 7;
+	}
+	#ciudad {
+		order: 6;
+	}
+	#zona {
+		order: 5;
+	}
+	.search-form {
+		order: 4;
+	}
+}
