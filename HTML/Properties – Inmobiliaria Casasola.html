@@ -522,7 +522,7 @@
 													with_content">
 													<div class="sc_layouts_title_content">
 														<div class="sc_layouts_title_title">
-															<h1 class="sc_layouts_title_caption">All Properties</h1>
+															<h1 class="sc_layouts_title_caption">Propiedades</h1>
 														</div>
 													</div><!-- .sc_layouts_title_content -->
 												</div><!-- /.sc_layouts_title -->
@@ -538,14 +538,47 @@
 					<!-- Seccion de filtro - agregado -->
 					<div class="filter">
 						<form class="form-filter">
-							<input type="text" name="palabraClave" id="palabraClave" placeholder="Palabra clave">
-							<input type="text" name="ventaCasa" id="ventaCasa" placeholder="Venta">
-							<input type="text" name="casa" id="casa" placeholder="Casa">
-							<input type="text" name="departamento" id="departamento" placeholder="Departamento">
-							<input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
-							<input type="text" name="zona" id="zona" placeholder="Zona">
+							<select class="select-filter" name="palabraClave" id="palabraClave">
+								<option value="Palabra Clave" selected> Palabra clave </option>
+								<option value="Casa"> Casa </option>
+								<option value="Apartamento"> Apartamento </option>
+								<option value="1 nivel"> 1 nivel </option>
+							</select>
+							<select class="select-filter" name="ventaCasa" id="ventaCasa">
+								<option value="Venta"> Venta </option>
+								<option value="Alquiler"> Alquiler </option>
+							</select>
+							<select class="select-filter" name="casas" id="casas">
+								<option value="Casas"> Casas </option>
+								<option value="Residencial"> Residencial </option>
+							</select>
+							<select class="select-filter" name="departamento" id="departamento">
+								<option value="departamento"> Departamento </option>
+								<option value="Guatemala"> Guatemala </option>
+								<option value="Chimaltenango"> Chimaltenango </option>
+							</select>
+							<select class="select-filter" name="ciudad" id="ciudad">
+								<option value="Ciudad"> Ciudad </option>
+								<option value="Mixco"> Mixco </option>
+								<option value="Villa Nueva"> Villa Nueva </option>
+								<option value="Amatitlan"> Amatitlan </option>
+							</select>
+							<select class="select-filter" name="zona" id="zona">
+								<option value="Zona"> Zona </option>
+								<option value="1"> 1 </option>
+								<option value="2"> 2 </option>
+								<option value="2"> 3 </option>
+								<option value="2"> 4 </option>
+							</select>
+							<div class="range-prices">
+								<input type="range" list="prices" min="570" max="5600">
+								<div class="prices">
+									<span>Q570.00</span>
+									<span>Q5,600.00</span>
+								</div>
+							</div>
 							<input type="submit" id="search" class="search-form view_more sc_button" value="buscar">
-						</form>
+						</form>	
 					</div>
 					<!-- Seccion de filtro - termina-->
 				</header>

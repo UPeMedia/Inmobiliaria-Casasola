@@ -18,6 +18,48 @@
 	margin: 0 auto;
 }
 
+.select-filter {
+	-webkit-appearance: listbox !important;
+	width: 100%;
+}
+
+.select-filter option {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.range-prices {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.range-prices input[type='range']::-webkit-slider-runnable-track {
+	height: 12px;
+	background-color: gray !important;
+}
+.range-prices input::-webkit-slider-thumb {
+	height: 16px !important;
+	width: 16px !important;
+	-webkit-appearance: none !important;
+	border-radius: 5px;
+	background-color: rgb(47, 47, 47) !important;
+}
+.range-prices input[type='range']::-ms-thumb {
+	margin-top: 1px;
+	box-shadow: 1px 1px 1px #000000;
+	border: 1px solid #000000;
+	height: 19px;
+	width: 15px;
+	border-radius: 5px;
+	background: #0c8af8;
+	cursor: pointer;
+}
+
+.range-prices .prices {
+	display: flex;
+	justify-content: space-between;
+}
+
 @media (min-width: 648px) {
 	.filter {
 		transform: translateY(-3rem);
@@ -32,16 +74,16 @@
 	}
 
 	#departamento {
-		order: 7;
-	}
-	#ciudad {
-		order: 6;
-	}
-	#zona {
 		order: 5;
 	}
+	#ciudad {
+		order: 7;
+	}
+	#zona {
+		order: 6;
+	}
 	.search-form {
-		order: 4;
+		order: 8;
 	}
 }
 
@@ -60,15 +102,35 @@
 	}
 
 	#departamento {
-		order: 7;
-	}
-	#ciudad {
-		order: 6;
-	}
-	#zona {
 		order: 5;
 	}
+	#ciudad {
+		order: 7;
+	}
+	#zona {
+		order: 6;
+	}
 	.search-form {
-		order: 4;
+		order: 8;
+	}
+}
+
+.vc_custom_1630624290203 {
+	height: 200px !important;
+}
+
+.sc_content_default {
+	padding-top: 54px !important;
+}
+
+@media (min-width: 648px) {
+	.vc_custom_1630624290203 {
+		height: 250px !important;
+	}
+}
+
+@media (min-width: 1119px) {
+	.vc_custom_1630624290203 {
+		height: 300px !important;
 	}
 }
