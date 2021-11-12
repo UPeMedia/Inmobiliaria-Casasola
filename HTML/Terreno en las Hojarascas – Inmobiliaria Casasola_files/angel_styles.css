@@ -18,3 +18,85 @@
 		gap: 1em;
 	}
 }
+
+.vc_custom_1630624290203 {
+	height: 250px;
+}
+
+.vc_custom_1630624290203 .sc_layouts_title_caption {
+	padding-top: 54px;
+}
+
+.sc_list-breadcrumb {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 24px;
+	color: #f8bd6a;
+}
+.properties_page_features_list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 2rem;
+}
+
+.properties_page_features_list ul {
+	list-style: none;
+}
+
+.properties_page_features_list i {
+	color: #f8bd6a !important;
+}
+
+.properties_page_agent_wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+@media (min-width: 648px) {
+	.properties_page_agent_wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 1119px) {
+	.properties_page_agent_wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+/* Fondos de Iconos - Propiedad */
+.social_icon {
+	background-color: #f8bd6a !important;
+	color: #27464d !important;
+}
+
+.social_icon i {
+	background-color: #f8bd6a !important;
+	color: #27464d !important;
+}
+
+/*Form de contacto cambio de colores */
+
+.sc_form_form input {
+	background-color: #0a4d56 !important;
+}
+
+.sc_form_form input::placeholder {
+	color: #fff;
+}
+
+.sc_form_form textarea {
+	background-color: #0a4d56 !important;
+}
+
+.sc_form_form textarea::placeholder {
+	color: #fff;
+}
